@@ -9,7 +9,7 @@ import javax.imageio.ImageIO
 
 class RoutePainter implements PaintingStrategy {
 
-	val HORIZONTAL = ImageIO.read(ClassLoader.getResourceAsStream("/bence/xtend/bombsquad/ui/resources/horizontal.gif"));
+	val HORIZONTAL = ImageIO.read(RoutePainter.getResourceAsStream("/bence/xtend/bombsquad/ui/resources/horizontal.gif"));
 	val VERTICAL = ImageIO.read(RoutePainter.getResourceAsStream("/bence/xtend/bombsquad/ui/resources/vertical.gif"));
 	val UPPER_RIGHT = ImageIO.read(RoutePainter.getResourceAsStream("/bence/xtend/bombsquad/ui/resources/upper_right.gif"));
 	val UPPER_LEFT = ImageIO.read(RoutePainter.getResourceAsStream("/bence/xtend/bombsquad/ui/resources/upper_left.gif"));

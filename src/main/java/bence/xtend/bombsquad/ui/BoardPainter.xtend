@@ -11,8 +11,8 @@ import static bence.xtend.bombsquad.model.BombSquadListBasedGrid.REACTOR
 
 class BoardPainter implements PaintingStrategy {
 	
-	val DROID_PIC = ImageIO.read(ClassLoader.getResourceAsStream("/bence/xtend/bombsquad/ui/resources/droid.gif"));
-	val REACTOR_PIC = ImageIO.read(ClassLoader.getResourceAsStream("/bence/xtend/bombsquad/ui/resources/reactor.gif"));
+	val DROID_PIC = ImageIO.read(BoardPainter.getResourceAsStream("/bence/xtend/bombsquad/ui/resources/droid.gif"));
+	val REACTOR_PIC = ImageIO.read(BoardPainter.getResourceAsStream("/bence/xtend/bombsquad/ui/resources/reactor.gif"));
 	val PX50 = 50;
 	
 	RowBasedGrid grid
