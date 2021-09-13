@@ -12,7 +12,7 @@ import java.util.ArrayList
 
 class AboveDownRouteGeneratorTest {
 	
-	private var List<RouteStage> expectedRoute = new ArrayList
+	var List<RouteStage> expectedRoute = new ArrayList
 	var grid = new BombSquadListBasedGrid()
 	
 	int numberOfReactors
@@ -22,7 +22,6 @@ class AboveDownRouteGeneratorTest {
 		grid.addRow(#[REACTOR,EMPTY])
 		grid.startColumn = 1
 		numberOfReactors = 1
-		
 		
 		expectedRoute.add(new RouteStage(0,1,false))
 		expectedRoute.add(new RouteStage(1,1,false))
